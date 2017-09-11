@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Jeu de Dames</title>
+		<meta charset="utf-8">
+		<link type="text/css" rel="stylesheet" href="css/style.css">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/js.js"></script>
+	</head>
+	<body>
+		<header id="over" class="d-none">
+			<div id="container">
+				<h2 id="h2">TOUR FINISED PLAYER 1 WON!</h2>
+				<button id="play">PLAY AGAIN</button>
+			</div>
+		</header>
+      <main>
+			<section id="title">
+				<h1>CHECKERS</h1>
+			</section>
+			<button id="again">RESTART</button>
+			<h2 id="tour">Player 1!</h2>
+			<div id="terrain">
+				<div id="A1" class="case blanc">
+				</div>
+				<div id="A2" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="A3" class="case blanc">
+				</div>
+				<div id="A4" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="A5" class="case blanc">
+				</div>
+				<div id="A6" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="A7" class="case blanc">
+				</div>
+				<div id="A8" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="A9" class="case blanc">
+				</div>
+				<div id="A10" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="B1" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="B2" class="case blanc">
+				</div>
+				<div id="B3" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="B4" class="case blanc">
+				</div>
+				<div id="B5" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="B6" class="case blanc">
+				</div>
+				<div id="B7" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="B8" class="case blanc">
+				</div>
+				<div id="B9" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="B10" class="case blanc">
+				</div>
+				<div id="C1" class="case blanc">
+				</div>
+				<div id="C2" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="C3" class="case blanc">
+				</div>
+				<div id="C4" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="C5" class="case blanc">
+				</div>
+				<div id="C6" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="C7" class="case blanc">
+				</div>
+				<div id="C8" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="C9" class="case blanc">
+				</div>
+				<div id="C10" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="D1" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="D2" class="case blanc">
+				</div>
+				<div id="D3" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="D4" class="case blanc">
+				</div>
+				<div id="D5" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="D6" class="case blanc">
+				</div>
+				<div id="D7" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="D8" class="case blanc">
+				</div>
+				<div id="D9" class="case noir">
+					<div class="piece pnoir">
+					</div>
+				</div>
+				<div id="D10" class="case blanc">
+				</div>
+				<div id="E1" class="case blanc">
+				</div>
+				<div id="E2" class="case noir">
+					<div class="piece">
+					</div>
+				</div>
+				<div id="E3" class="case blanc">
+				</div>
+				<div id="E4" class="case noir">
+					<div class="piece">
+					</div>
+				</div>
+				<div id="E5" class="case blanc">
+				</div>
+				<div id="E6" class="case noir">
+					<div class="piece">
+					</div>
+				</div>
+				<div id="E7" class="case blanc">
+				</div>
+				<div id="E8" class="case noir">
+					<div class="piece">
+					</div>
+				</div>
+				<div id="E9" class="case blanc">
+				</div>
+				<div id="E10" class="case noir">
+					<div class="piece">
+					</div>
+				</div>
+				<div id="F1" class="case noir">
+					<div class="piece">
+					</div>
+				</div>
+				<div id="F2" class="case blanc">
+				</div>
+				<div id="F3" class="case noir">
+					<div class="piece">
+					</div>
+				</div>
+				<div id="F4" class="case blanc">
+				</div>
+				<div id="F5" class="case noir">
+					<div class="piece">
+					</div>
+				</div>
+				<div id="F6" class="case blanc">
+				</div>
+				<div id="F7" class="case noir">
+					<div class="piece">
+					</div>
+				</div>
+				<div id="F8" class="case blanc">
+				</div>
+				<div id="F9" class="case noir">
+					<div class="piece">
+					</div>
+				</div>
+				<div id="F10" class="case blanc">
+				</div>
+				<div id="G1" class="case blanc">
+				</div>
+				<div id="G2" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="G3" class="case blanc">
+				</div>
+				<div id="G4" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="G5" class="case blanc">
+				</div>
+				<div id="G6" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="G7" class="case blanc">
+				</div>
+				<div id="G8" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="G9" class="case blanc">
+				</div>
+				<div id="G10" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="H1" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="H2" class="case blanc">
+				</div>
+				<div id="H3" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="H4" class="case blanc">
+				</div>
+				<div id="H5" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="H6" class="case blanc">
+				</div>
+				<div id="H7" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="H8" class="case blanc">
+				</div>
+				<div id="H9" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="H10" class="case blanc">
+				</div>
+				<div id="I1" class="case blanc">
+				</div>
+				<div id="I2" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="I3" class="case blanc">
+				</div>
+				<div id="I4" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="I5" class="case blanc">
+				</div>
+				<div id="I6" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="I7" class="case blanc">
+				</div>
+				<div id="I8" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="I9" class="case blanc">
+				</div>
+				<div id="I10" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="J1" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="J2" class="case blanc">
+				</div>
+				<div id="J3" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="J4" class="case blanc">
+				</div>
+				<div id="J5" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="J6" class="case blanc">
+				</div>
+				<div id="J7" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="J8" class="case blanc">
+				</div>
+				<div id="J9" class="case noir">
+					<div class="piece pblanc">
+					</div>
+				</div>
+				<div id="J10" class="case blanc">
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
